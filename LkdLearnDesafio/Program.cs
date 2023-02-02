@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Banco;
 /*
  *  Criar um console app para movimentações financeiras
  *  Criar Clientes, PessoaFisica e PessoaJuridica
@@ -14,5 +15,11 @@ namespace LkdLearnDesafio
 {
     public class Program
     {
+        public static void Main()
+        {
+            Sistema s = Sistema.GetInstance();
+            s.run();
+
+        }
     }
 }
